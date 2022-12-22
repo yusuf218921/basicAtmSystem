@@ -25,7 +25,7 @@ public class CustomerMenu implements Menu {
             System.out.print("Yapılacak işlem -> ");
             selection = scanner.next();
 
-            if (selection.toLowerCase().equals("q")) {
+            if (selection.equalsIgnoreCase("q")) {
                 System.out.println("Sistem kapanıyor lütfen bekleyiniz");
                 ThreadOperations.thread_sleep(100);
                 System.out.println("3");
@@ -39,7 +39,7 @@ public class CustomerMenu implements Menu {
             } else if (selection.equals("1")) {
                 new CardMenu().menu();
             } else if (selection.equals("2")) {
-                new CustomerMenu().menu();
+                new AccountMenu().menu();
             } else if (selection.equals("3")) {
 
             } else if (selection.equals("4")) {
@@ -52,7 +52,7 @@ public class CustomerMenu implements Menu {
 
             } else if (selection.equals("8")) {
 
-            } else if (selection.toLowerCase().equals("b")) {
+            } else if (selection.equalsIgnoreCase("b")) {
                 System.out.println("Geri gönderiliyorsunuz lütfen bekleyiniz...");
                 ThreadOperations.thread_sleep(1000);
                 break;

@@ -18,7 +18,7 @@ public class CustomerLogin implements Login {
             true, herhangi bir eşlenme olmazsa false dönüşü
          */
         for (CustomerAccount account : Statics.customerAccounts) {
-            if (account.getUserName().equals(userName) && account.getPassword().equals(password)) {
+            if (account.getUserName().equalsIgnoreCase(userName) && account.getPassword().equals(password)) {
                 Statics.loginId = account.getId();
                 Statics.customerLogin = true;
                 return true;

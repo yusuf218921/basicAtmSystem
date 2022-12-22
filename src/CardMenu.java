@@ -18,7 +18,7 @@ public class CardMenu implements Menu {
             System.out.print("Yapılacak işlem -> ");
             selection = scanner.next();
 
-            if (selection.toLowerCase().equals("b")) {
+            if (selection.equalsIgnoreCase("b")) {
                 System.out.println("Geri gönderiliyorsunuz lütfen bekleyiniz...");
                 ThreadOperations.thread_sleep(1000);
                 break;

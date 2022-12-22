@@ -14,7 +14,7 @@ public class InputThings {
         Scanner scanner = new Scanner(System.in);
         String yesOrNo;
         while (true) {
-            System.out.print("Devam etmek istiyorsanız evet, geri dönmek için hayır yazınız -> ");
+            System.out.print("Devam etmek istiyor musunuz evet/hayır -> ");
             yesOrNo = scanner.next();
             if (yesOrNo.toLowerCase().equals("evet")) {
                 return true;

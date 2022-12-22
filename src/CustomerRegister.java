@@ -56,6 +56,7 @@ public class CustomerRegister {
                 InputThings.pressENTERToContunie();
                 break;
             } else {
+                System.out.println("Girmiş olduğunuz kullanıcı adı daha önce alınmış...");
                 if (InputThings.yesOrNo()) {
 
                 } else {
@@ -67,7 +68,7 @@ public class CustomerRegister {
 
     public static boolean registerQuery(String userName) {
         for (CustomerAccount account : Statics.customerAccounts) {
-            if (userName.equals(account.getUserName())) {
+            if (userName.equalsIgnoreCase(account.getUserName())) {
                 return false;
             }
         }
