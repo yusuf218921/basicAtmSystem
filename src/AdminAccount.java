@@ -5,5 +5,6 @@ public class AdminAccount extends BaseAccount {
     }
 
     @Override
-    public void list() {}
+    public void list() {
+    }
 }

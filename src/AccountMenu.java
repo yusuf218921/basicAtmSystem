@@ -64,7 +64,7 @@ public class AccountMenu implements Menu {
                         System.out.println("Yanlış telefon numarası lütfen tekrar deneyiniz...");
                     }
                 }
-                Statics.customerAccounts.get(Statics.loginId).setInfo(firstName,lastName,email,tel);
+                Statics.customerAccounts.get(Statics.loginId).setInfo(firstName, lastName, email, tel);
                 System.out.println("Hesap bilgileri güncellendi...");
                 InputThings.pressENTERToContunie();
             } else if (selection.equals("3")) {

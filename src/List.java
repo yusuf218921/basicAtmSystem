@@ -3,17 +3,18 @@ public class List {
         if (Statics.customerAccounts.get(Statics.loginId).cards[0].isEmpty()) {
             System.out.println("Hesabınızda Kayıtlı Banka Kartı Bulunmamaktadır");
         } else {
-            for (BaseCard card:Statics.customerAccounts.get(Statics.loginId).cards[0]) {
+            for (BaseCard card : Statics.customerAccounts.get(Statics.loginId).cards[0]) {
                 card.list();
                 System.out.println();
             }
         }
     }
+
     public static void listCreditCard() {
         if (Statics.customerAccounts.get(Statics.loginId).cards[1].isEmpty()) {
             System.out.println("Hesabınızda Kayıtlı Banka Kartı Bulunmamaktadır");
         } else {
-            for (BaseCard card:Statics.customerAccounts.get(Statics.loginId).cards[1]) {
+            for (BaseCard card : Statics.customerAccounts.get(Statics.loginId).cards[1]) {
                 card.list();
                 System.out.println();
             }

@@ -15,5 +15,6 @@ public class ATMCard extends BaseCard {
         System.out.println("Son Kullanma Tarihi : " + getCardExpiryDate());
         System.out.println("CVV : " + getCardCVV());
         System.out.println("Bakiye : " + balance);
+        System.out.println("IBAN : " + getIBAN());
     }
 }

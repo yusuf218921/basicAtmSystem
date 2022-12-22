@@ -19,9 +19,9 @@ public class CreditCard extends BaseCard {
         return availableLimit;
     }
 
-    public void setAvailableLimit(int amount) {
-        this.availableLimit = amount;
-        this.debit -= amount;
+    public void setAvailableLimit(int availableLimit) {
+        this.availableLimit = availableLimit;
+        this.debit -= availableLimit;
     }
 
     @Override
@@ -31,5 +31,6 @@ public class CreditCard extends BaseCard {
         System.out.println("CVV : " + getCardCVV());
         System.out.println("Kullanılabilir Limit : " + availableLimit);
         System.out.println("Kalan Borç : " + debit);
+        System.out.println("IBAN : " + getIBAN());
     }
 }

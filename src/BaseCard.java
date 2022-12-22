@@ -1,10 +1,7 @@
-import java.util.ArrayList;
-
 public abstract class BaseCard {
-    private int cardId;
     private String cardNum;
     private String cardExpiryDate = "";
-    private int cardCVV;
+    private final int cardCVV;
     private String IBAN;
 
     //Constructor
@@ -20,7 +17,6 @@ public abstract class BaseCard {
         int day = (int) (Math.random() * (30 - 1)) + (1);
         int year = (int) (Math.random() * (2030 - 2027)) + (2027);
         cardExpiryDate += "" + day + "/" + month + "/" + year;
-        cardId=Statics.loginId;
     }
 
     public String getCardNum() {

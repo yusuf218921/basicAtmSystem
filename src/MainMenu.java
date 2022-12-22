@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MainMenu implements Menu{
+public class MainMenu implements Menu {
     @Override
     public void menu() {
         while (true) {
@@ -17,9 +17,9 @@ public class MainMenu implements Menu{
             System.out.println("**************************************************************\n\n");
 
             System.out.print("Yapılacak işlem -> ");
-            selection=scanner.next();
+            selection = scanner.next();
 
-            if(selection.toLowerCase().equals("q")) {
+            if (selection.toLowerCase().equals("q")) {
                 System.out.println("Sistem kapanıyor lütfen bekleyiniz");
                 ThreadOperations.thread_sleep(250);
                 System.out.println("3");
@@ -37,11 +37,10 @@ public class MainMenu implements Menu{
                         System.out.println("Giriş işlemi başarılı sisteme yönlendiriliyorsunuz ");
                         ThreadOperations.thread_sleep(1000);
                         break;
-                    }
-                    else {
+                    } else {
                         System.out.println("Hatalı şifre veya kullanıcı adı!");
-                        if(InputThings.yesOrNo()){}
-                        else {
+                        if (InputThings.yesOrNo()) {
+                        } else {
                             break;
                         }
                     }
@@ -56,7 +55,7 @@ public class MainMenu implements Menu{
                 ClearConsole.clrUp();
                 System.out.println("Müşteri temsilcimize bağlanıyorsunuz lütfen bekleyiniz");
                 ThreadOperations.thread_sleep(1000);
-                Statics.customerRepresentative=true;
+                Statics.customerRepresentative = true;
                 break;
             } else {
                 System.out.println("Yanlış değer girildi lütfen tekrar deneyiniz");
