@@ -5,7 +5,7 @@ public class ATM {
             menu = new MainMenu();
             menu.menu();
             if (Statics.customerLogin) {
-                menu = new AccountMenu();
+                menu = new CustomerMenu();
                 menu.menu();
                 Statics.customerLogin = false;
             } else if (Statics.adminLogin) {

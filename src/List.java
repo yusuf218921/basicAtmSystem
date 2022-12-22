@@ -19,4 +19,8 @@ public class List {
             }
         }
     }
+
+    public static void listCustomerInfo() {
+        Statics.customerAccounts.get(Statics.loginId).list();
+    }
 }

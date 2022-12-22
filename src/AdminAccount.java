@@ -3,4 +3,7 @@ public class AdminAccount extends BaseAccount {
     public AdminAccount(String userName, String password) {
         super(userName, password);
     }
+
+    @Override
+    public void list() {}
 }

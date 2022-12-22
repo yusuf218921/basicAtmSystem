@@ -6,7 +6,7 @@ public class CustomerAccount extends BaseAccount {
     private String email;
     private String firstName;
     private String lastName;
-    ArrayList<BaseCard>[]  cards=new ArrayList[]{new ArrayList<ATMCard>(),new ArrayList<CreditCard>()};
+    ArrayList<BaseCard>[] cards = new ArrayList[]{new ArrayList<ATMCard>(), new ArrayList<CreditCard>()};
 
     //Constructor
 
@@ -24,36 +24,28 @@ public class CustomerAccount extends BaseAccount {
         return id;
     }
 
-
-    public long getTel() {
-        return tel;
-    }
-
-    public void setTel(long tel) {
-        this.tel = tel;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
+    public void setInfo(String firstName, String lastName, String email, long tel) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
+        this.tel = tel;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+
+    @Override
+    public void list() {
+        System.out.println("İsim : " + firstName);
+        System.out.println("Soyisim : " + lastName);
+        System.out.println("Telefon Numarası : " + tel);
+        System.out.println("E-posta : " + email);
     }
 }

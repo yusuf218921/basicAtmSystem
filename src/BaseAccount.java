@@ -23,4 +23,6 @@ public abstract class BaseAccount {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public abstract void list();
 }
