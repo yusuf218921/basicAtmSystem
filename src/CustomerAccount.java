@@ -1,13 +1,16 @@
+import java.util.ArrayList;
+
 public class CustomerAccount extends BaseAccount {
     private int id;
     private long tel;
     private String email;
     private String firstName;
     private String lastName;
+    ArrayList<BaseCard>[]  cards=new ArrayList[]{new ArrayList<ATMCard>(),new ArrayList<CreditCard>()};
 
     //Constructor
 
-    public CustomerAccount(int id, String userName, String password, long tel, String email, String firstName, String lastName) {
+    public CustomerAccount(String userName, String password, long tel, String email, String firstName, String lastName) {
         super(userName, password);
         this.id = Statics.registerId;
         Statics.registerId++;

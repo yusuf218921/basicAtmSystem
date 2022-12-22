@@ -51,8 +51,9 @@ public class CustomerRegister {
                     }
                 }
                 Statics.customerAccounts.add(
-                        new CustomerAccount(Statics.registerId, userName, password, tel, email, firstName, lastName));
+                        new CustomerAccount(userName, password, tel, email, firstName, lastName));
                 System.out.println("Kayıt başarıyla gerçekleşti ana menüye yönlendiriliyorsunuz");
+                InputThings.pressENTERToContunie();
                 break;
             } else {
                 if (InputThings.yesOrNo()) {

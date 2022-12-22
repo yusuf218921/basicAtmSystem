@@ -11,7 +11,7 @@ public class InputControls {
         int isInt;
         boolean control = true;
         for (int i = 0; i < str.length(); i++) {
-            character = str.charAt(0);
+            character = str.charAt(i);
             try {
                 // girilen string ifade harf harf int dönüşümü kontrol edilir
                 isInt = Integer.parseInt(String.valueOf(character));

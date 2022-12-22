@@ -21,13 +21,13 @@ public class MainMenu implements Menu{
 
             if(selection.toLowerCase().equals("q")) {
                 System.out.println("Sistem kapanıyor lütfen bekleyiniz");
-                ThreadOperations.thread(100);
+                ThreadOperations.thread_sleep(250);
                 System.out.println("3");
-                ThreadOperations.thread(100);
+                ThreadOperations.thread_sleep(250);
                 System.out.println("2");
-                ThreadOperations.thread(100);
+                ThreadOperations.thread_sleep(250);
                 System.out.println("1");
-                ThreadOperations.thread(100);
+                ThreadOperations.thread_sleep(250);
                 System.out.println("0");
                 System.exit(0);
             } else if (selection.equals("1")) {
@@ -35,7 +35,7 @@ public class MainMenu implements Menu{
                 while (true) {
                     if (new CustomerLogin().login()) {
                         System.out.println("Giriş işlemi başarılı sisteme yönlendiriliyorsunuz ");
-                        ThreadOperations.thread(500);
+                        ThreadOperations.thread_sleep(1000);
                         break;
                     }
                     else {
@@ -52,9 +52,12 @@ public class MainMenu implements Menu{
                 System.out.println("********************************************************\n\n");
                 System.out.println("********************KAYIT EKRANI************************\n\n");
                 CustomerRegister.register();
-                continue;
             } else if (selection.equals("3")) {
-
+                ClearConsole.clrUp();
+                System.out.println("Müşteri temsilcimize bağlanıyorsunuz lütfen bekleyiniz");
+                ThreadOperations.thread_sleep(1000);
+                Statics.customerRepresentative=true;
+                break;
             } else {
                 System.out.println("Yanlış değer girildi lütfen tekrar deneyiniz");
             }

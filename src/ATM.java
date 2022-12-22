@@ -5,12 +5,12 @@ public class ATM {
             menu = new MainMenu();
             menu.menu();
             if (Statics.customerLogin) {
-
-
-                break;
+                menu = new AccountMenu();
+                menu.menu();
+                Statics.customerLogin = false;
             } else if (Statics.adminLogin) {
                 break;
-            } else {
+            } else if (Statics.customerRepresentative) {
                 System.out.println("sa");
                 break;
             }
