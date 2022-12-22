@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmoto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdminAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdminOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaseAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClearConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomerAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomerLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomerRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DenemeMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InputControls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InputThings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Statics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThreadOperations.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JGV3LMNvRF2XjYuvJNpOh4wSlh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="DenemeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DenemeMain" />
+      <module name="atmoto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="atmoto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DenemeMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="" />
+      <created>1671704208730</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671704208730</updated>
+    </task>
+    <servers />
+  </component>
+</project>
