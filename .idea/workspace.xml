@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="kart listeleme tamamlandı">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardMenu.java" afterDir="false" />
+    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="kart işlemleri tamamlandı">
+      <change afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/List.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,12 +119,20 @@
       <option name="project" value="LOCAL" />
       <updated>1671742995997</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="kart işlemleri tamamlandı">
+      <created>1671743596016</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671743596016</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Giriş ve Kayıt tamamlandı CustomerMenu yapılacak" />
     <MESSAGE value="kart listeleme tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="kart listeleme tamamlandı" />
+    <MESSAGE value="kart işlemleri tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="kart işlemleri tamamlandı" />
   </component>
 </project>
