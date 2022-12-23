@@ -58,7 +58,8 @@ public class MainMenu implements Menu {
                 Statics.customerRepresentative = true;
                 break;
             } else {
-                System.out.println("Yanlış değer girildi lütfen tekrar deneyiniz");
+                System.out.println("Yanlış değer girildi!");
+                InputThings.pressENTERToContunie();
             }
             if (Statics.customerLogin) {
                 break;

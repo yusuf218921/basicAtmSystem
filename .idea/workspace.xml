@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="para yükle para çek kredi kartı borcu öde tamamlandı">
+    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="transfer tamamlandı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671825384211</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="transfer tamamlandı">
+      <created>1671828076936</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671828076936</updated>
+    </task>
+    <task id="LOCAL-00014" summary="transfer tamamlandı">
+      <created>1671828132687</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671828132687</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +180,7 @@
     <MESSAGE value="Hesap işlemleri test aşaması" />
     <MESSAGE value="Hesap işlemleri test aşaması tamamlandı" />
     <MESSAGE value="para yükle para çek kredi kartı borcu öde tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="para yükle para çek kredi kartı borcu öde tamamlandı" />
+    <MESSAGE value="transfer tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="transfer tamamlandı" />
   </component>
 </project>
