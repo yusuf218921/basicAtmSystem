@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="Hesap işlemleri test aşaması tamamlandı">
+    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="para yükle para çek kredi kartı borcu öde tamamlandı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ATMCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebitCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminOperations.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BaseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DenemeMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671746179066</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="para yükle para çek kredi kartı borcu öde tamamlandı">
+      <created>1671825384211</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671825384211</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -174,6 +167,7 @@
     <MESSAGE value="kart işlemleri tamamlandı" />
     <MESSAGE value="Hesap işlemleri test aşaması" />
     <MESSAGE value="Hesap işlemleri test aşaması tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hesap işlemleri test aşaması tamamlandı" />
+    <MESSAGE value="para yükle para çek kredi kartı borcu öde tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="para yükle para çek kredi kartı borcu öde tamamlandı" />
   </component>
 </project>

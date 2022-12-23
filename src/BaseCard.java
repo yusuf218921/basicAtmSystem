@@ -3,6 +3,11 @@ public abstract class BaseCard {
     private String cardExpiryDate = "";
     private final int cardCVV;
     private String IBAN;
+    private int customerId=Statics.loginId;
+
+    public int getCustomerId() {
+        return customerId;
+    }
 
     //Constructor
     public BaseCard() {
@@ -12,7 +17,7 @@ public abstract class BaseCard {
         cardCVV = (int) (Math.random() * (999 - 100)) + (100);
         IBAN = "TR ";
         long ibanNum = (long) (Math.random() * (9_999_999_999_999_999L - 1_000_000_000_000_000L)) + (1_000_000_000_000_000L);
-        IBAN += ibanNum;
+        IBAN += String.valueOf(ibanNum);
         int month = (int) (Math.random() * (12 - 1)) + (1);
         int day = (int) (Math.random() * (30 - 1)) + (1);
         int year = (int) (Math.random() * (2030 - 2027)) + (2027);
