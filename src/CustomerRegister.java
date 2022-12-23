@@ -52,6 +52,7 @@ public class CustomerRegister {
                 }
                 Statics.customerAccounts.add(
                         new CustomerAccount(userName, password, tel, email, firstName, lastName));
+                Statics.transactions.add(new CardTransactions());
                 System.out.println("Kayıt başarıyla gerçekleşti ana menüye yönlendiriliyorsunuz");
                 InputThings.pressENTERToContunie();
                 break;

@@ -60,7 +60,7 @@ public class MainMenu implements Menu {
             } else {
                 System.out.println("Yanlış değer girildi lütfen tekrar deneyiniz");
             }
-            if (Statics.adminLogin || Statics.customerLogin) {
+            if (Statics.customerLogin) {
                 break;
             }
         }

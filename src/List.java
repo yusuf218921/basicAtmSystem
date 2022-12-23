@@ -1,5 +1,5 @@
 public class List {
-    public static void listATMCard() {
+    public static void listDebitCard() {
         if (Statics.customerAccounts.get(Statics.loginId).cards[0].isEmpty()) {
             System.out.println("Hesabınızda Kayıtlı Banka Kartı Bulunmamaktadır");
         } else {

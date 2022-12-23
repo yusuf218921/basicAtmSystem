@@ -23,13 +23,13 @@ public class CardMenu implements Menu {
                 ThreadOperations.thread_sleep(1000);
                 break;
             } else if (selection.equals("1")) {
-                List.listATMCard();
+                List.listDebitCard();
                 InputThings.pressENTERToContunie();
             } else if (selection.equals("2")) {
                 List.listCreditCard();
                 InputThings.pressENTERToContunie();
             } else if (selection.equals("3")) {
-                Statics.customerAccounts.get(Statics.loginId).cards[0].add(new ATMCard());
+                Statics.customerAccounts.get(Statics.loginId).cards[0].add(new DebitCard());
                 System.out.println("Yeni banka kartınız oluşturuldu...");
                 InputThings.pressENTERToContunie();
             } else if (selection.equals("4")) {

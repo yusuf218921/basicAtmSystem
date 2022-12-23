@@ -12,6 +12,7 @@ public class AccountMenu implements Menu {
             System.out.println("[2] Hesap Bilgilerimi Düzenle");
             System.out.println("[3] Kullanıcı Adı Değiştir");
             System.out.println("[4] Şifre Değiştir");
+            System.out.println("[5] Son İşlemler");
             System.out.println("[b] Geri Dön");
             System.out.println("**************************************************************\n");
 
@@ -69,7 +70,7 @@ public class AccountMenu implements Menu {
                 InputThings.pressENTERToContunie();
             } else if (selection.equals("3")) {
                 String userName;
-                System.out.println("Yeni Kullanıcı adı : ");
+                System.out.print("Yeni Kullanıcı adı : ");
                 userName = scanner.next();
                 if (CustomerRegister.registerQuery(userName)) {
                     Statics.customerAccounts.get(Statics.loginId).setUserName(userName);
@@ -80,10 +81,22 @@ public class AccountMenu implements Menu {
                 InputThings.pressENTERToContunie();
             } else if (selection.equals("4")) {
                 String password;
-                System.out.println("Yeni Şifre : ");
+                System.out.print("Yeni Şifre : ");
                 password = scanner.next();
                 Statics.customerAccounts.get(Statics.loginId).setPassword(password);
                 System.out.println("Şifre Başarıyla değiştirildi");
+                InputThings.pressENTERToContunie();
+            } else if (selection.equals("5")) {
+                if (Statics.transactions.get(Statics.loginId).transactions.isEmpty()) {
+                    System.out.println("Hesabınızda herhangi bir işlem bulunmamaktadır...");
+                } else {
+                    for (String transaction : Statics.transactions.get(Statics.loginId).transactions) {
+                        System.out.println(transaction);
+                    }
+                }
+                InputThings.pressENTERToContunie();
+            } else {
+                System.out.println("Hatalı işlem numarası girildi");
                 InputThings.pressENTERToContunie();
             }
         }

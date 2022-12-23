@@ -8,7 +8,7 @@ public abstract class BaseCard {
     public BaseCard() {
         int last4CardNum = (int) (Math.random() * (9999 - 1000)) + (1000);
         cardNum = "4345 0000 0000 ";
-        cardNum += last4CardNum;
+        cardNum += String.valueOf(last4CardNum);
         cardCVV = (int) (Math.random() * (999 - 100)) + (100);
         IBAN = "TR ";
         long ibanNum = (long) (Math.random() * (9_999_999_999_999_999L - 1_000_000_000_000_000L)) + (1_000_000_000_000_000L);
@@ -36,4 +36,15 @@ public abstract class BaseCard {
     }
 
     public abstract void list();
+    public abstract void setBalance(int balance);
+    public abstract int getBalance();
+
+    public abstract int getDebit();
+
+
+    public abstract void setDebit(int debit);
+
+    public abstract int getAvailableLimit();
+
+    public abstract void setAvailableLimit(int availableLimit);
 }

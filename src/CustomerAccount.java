@@ -6,7 +6,7 @@ public class CustomerAccount extends BaseAccount {
     private String email;
     private String firstName;
     private String lastName;
-    ArrayList<BaseCard>[] cards = new ArrayList[]{new ArrayList<ATMCard>(), new ArrayList<CreditCard>()};
+    ArrayList<BaseCard>[] cards = new ArrayList[]{new ArrayList<DebitCard>(), new ArrayList<CreditCard>()};
 
     //Constructor
 

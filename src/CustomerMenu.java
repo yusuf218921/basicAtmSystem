@@ -41,11 +41,56 @@ public class CustomerMenu implements Menu {
             } else if (selection.equals("2")) {
                 new AccountMenu().menu();
             } else if (selection.equals("3")) {
-
+                System.out.print("Yükleme yapılacak tutar : ");
+                int amount = InputControls.isItInt();
+                String cardNum;
+                scanner.nextLine();
+                while (true) {
+                    System.out.print("Yükleme yapılacak kartın numarasını giriniz : ");
+                    cardNum = scanner.nextLine();
+                    if(Statics.transactions.get(Statics.loginId).donation(amount,cardNum)) {
+                        InputThings.pressENTERToContunie();
+                        break;
+                    } else {
+                        if (!InputThings.yesOrNo()) {
+                            break;
+                        }
+                    }
+                }
             } else if (selection.equals("4")) {
-
+                while (true) {
+                    System.out.print("Ödenecek Borç Miktarı : ");
+                    int amount = InputControls.isItInt();
+                    String cardNum;
+                    scanner.nextLine();
+                    System.out.print("Borç ödenecek kartın numarasını giriniz : ");
+                    cardNum = scanner.nextLine();
+                    if(Statics.transactions.get(Statics.loginId).payOffCreditCardDebt(amount,cardNum)) {
+                        InputThings.pressENTERToContunie();
+                        break;
+                    } else {
+                        if (!InputThings.yesOrNo()) {
+                            break;
+                        }
+                    }
+                }
             } else if (selection.equals("5")) {
-
+                while (true) {
+                    System.out.print("Karttan çekilecek tutar : ");
+                    int amount = InputControls.isItInt();
+                    String cardNum;
+                    scanner.nextLine();
+                    System.out.print("Para çekilecek kartın numarasını giriniz : ");
+                    cardNum = scanner.nextLine();
+                    if(Statics.transactions.get(Statics.loginId).cashWithdrawal(amount,cardNum)) {
+                        InputThings.pressENTERToContunie();
+                        break;
+                    } else {
+                        if (!InputThings.yesOrNo()) {
+                            break;
+                        }
+                    }
+                }
             } else if (selection.equals("6")) {
 
             } else if (selection.equals("7")) {
