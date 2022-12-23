@@ -12,16 +12,22 @@ public class DebitCard extends BaseCard {
     }
 
     @Override
-    public int getDebit() {return 0;}
+    public int getDebit() {
+        return 0;
+    }
 
     @Override
-    public void setDebit(int debit) {}
+    public void setDebit(int debit) {
+    }
 
     @Override
-    public int getAvailableLimit() {return 0;}
+    public int getAvailableLimit() {
+        return 0;
+    }
 
     @Override
-    public void setAvailableLimit(int availableLimit) {}
+    public void setAvailableLimit(int availableLimit) {
+    }
 
     @Override
     public void list() {

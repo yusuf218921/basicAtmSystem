@@ -13,7 +13,7 @@ public class CreditCard extends BaseCard {
 
     @Override
     public void setDebit(int debit) {
-        int availableLimit = debit-this.debit;
+        int availableLimit = debit - this.debit;
         this.debit = debit;
         this.availableLimit += availableLimit;
     }
@@ -25,7 +25,7 @@ public class CreditCard extends BaseCard {
 
     @Override
     public void setAvailableLimit(int availableLimit) {
-        int debit=this.availableLimit-availableLimit;
+        int debit = this.availableLimit - availableLimit;
         this.availableLimit = availableLimit;
         this.debit -= debit;
     }
@@ -41,7 +41,8 @@ public class CreditCard extends BaseCard {
     }
 
     @Override
-    public void setBalance(int balance) {}
+    public void setBalance(int balance) {
+    }
 
     @Override
     public int getBalance() {

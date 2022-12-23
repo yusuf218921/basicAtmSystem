@@ -46,7 +46,7 @@ public class CustomerMenu implements Menu {
                 while (true) {
                     System.out.print("Yükleme yapılacak kartın numarasını giriniz : ");
                     cardNum = scanner.nextLine();
-                    if(Statics.transactions.get(Statics.loginId).donation(amount,cardNum)) {
+                    if (Statics.transactions.get(Statics.loginId).donation(amount, cardNum)) {
                         InputThings.pressENTERToContunie();
                         break;
                     } else {
@@ -63,7 +63,7 @@ public class CustomerMenu implements Menu {
                     scanner.nextLine();
                     System.out.print("Borç ödenecek kartın numarasını giriniz : ");
                     cardNum = scanner.nextLine();
-                    if(Statics.transactions.get(Statics.loginId).payOffCreditCardDebt(amount,cardNum)) {
+                    if (Statics.transactions.get(Statics.loginId).payOffCreditCardDebt(amount, cardNum)) {
                         InputThings.pressENTERToContunie();
                         break;
                     } else {
@@ -80,7 +80,7 @@ public class CustomerMenu implements Menu {
                     scanner.nextLine();
                     System.out.print("Para çekilecek kartın numarasını giriniz : ");
                     cardNum = scanner.nextLine();
-                    if(Statics.transactions.get(Statics.loginId).cashWithdrawal(amount,cardNum)) {
+                    if (Statics.transactions.get(Statics.loginId).cashWithdrawal(amount, cardNum)) {
                         InputThings.pressENTERToContunie();
                         break;
                     } else {
@@ -93,13 +93,13 @@ public class CustomerMenu implements Menu {
                 while (true) {
                     System.out.print("Gönderilecek miktar : ");
                     int amount = InputControls.isItInt();
-                    String cardNum,cardIBAN;
+                    String cardNum, cardIBAN;
                     scanner.nextLine();
                     System.out.print("Gönderen kartın numarasını giriniz :  ");
                     cardNum = scanner.nextLine();
                     System.out.print("Gönderilecek kartın IBAN numarasını giriniz : ");
                     cardIBAN = scanner.nextLine();
-                    if(Statics.transactions.get(Statics.loginId).transfer(amount,cardNum,cardIBAN)) {
+                    if (Statics.transactions.get(Statics.loginId).transfer(amount, cardNum, cardIBAN)) {
                         InputThings.pressENTERToContunie();
                         break;
                     } else {

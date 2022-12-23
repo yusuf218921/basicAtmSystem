@@ -3,7 +3,7 @@ public abstract class BaseCard {
     private String cardExpiryDate = "";
     private final int cardCVV;
     private String IBAN;
-    private int customerId=Statics.loginId;
+    private int customerId = Statics.loginId;
 
     public int getCustomerId() {
         return customerId;
@@ -41,7 +41,9 @@ public abstract class BaseCard {
     }
 
     public abstract void list();
+
     public abstract void setBalance(int balance);
+
     public abstract int getBalance();
 
     public abstract int getDebit();
