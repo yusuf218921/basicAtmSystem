@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="transfer tamamlandı">
+    <list default="true" id="4f0b6ec7-d055-478c-9ae1-e4fa17818afc" name="Changes" comment="müşteri hizmetleri kart kayıp ihbarları tamamlandı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CustomerRepresentativeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerRepresentativeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672689912628</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="müşteri hizmetleri kart kayıp ihbarları tamamlandı">
+      <created>1672691047086</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672691047086</updated>
+    </task>
+    <task id="LOCAL-00017" summary="müşteri hizmetleri kart kayıp ihbarları tamamlandı">
+      <created>1672691141734</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672691141734</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +203,7 @@
     <MESSAGE value="Hesap işlemleri test aşaması tamamlandı" />
     <MESSAGE value="para yükle para çek kredi kartı borcu öde tamamlandı" />
     <MESSAGE value="transfer tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="transfer tamamlandı" />
+    <MESSAGE value="müşteri hizmetleri kart kayıp ihbarları tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="müşteri hizmetleri kart kayıp ihbarları tamamlandı" />
   </component>
 </project>

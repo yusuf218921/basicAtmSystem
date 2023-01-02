@@ -10,7 +10,6 @@ public class CustomerRepresentativeMenu extends MainMenu implements IMenu {
             System.out.println("[2] Şifremi unuttum");
             System.out.println("[3] Banka kartı kayıp ihbarı yapmak istiyorum");
             System.out.println("[4] Kredi kartı kayıp ihbarı yapmak istiyorum");
-            System.out.println("[5] Kredi çekmek için başvuruda bulunmak istiyorum");
             System.out.println("[b] Geri Dön");
 
             System.out.print("\n\n Lütfen yapmak istediğiniz işlemi seçiniz -> ");
@@ -145,7 +144,6 @@ public class CustomerRepresentativeMenu extends MainMenu implements IMenu {
                         }
                     }
                 }
-                // TODO
                 while (control) {
                     String cardNum;
                     int balance;
@@ -202,16 +200,16 @@ public class CustomerRepresentativeMenu extends MainMenu implements IMenu {
 
                 while (control) {
                     String cardNum;
-                    int avaliableLimit,debit;
+                    int avaliableLimit, debit;
                     scanner.nextLine();
                     System.out.print("Kayıp Kartınızın Kart Numarasını Giriniz : ");
                     cardNum = scanner.nextLine();
                     for (int i = 0; i < Statics.customerAccounts.get(customerId).cards[1].size(); i++) {
                         if (Statics.customerAccounts.get(customerId).cards[1].get(i).getCardNum().equals(cardNum)) {
                             avaliableLimit = Statics.customerAccounts.get(customerId).cards[1].get(i).getAvailableLimit();
-                            debit=Statics.customerAccounts.get(customerId).cards[1].get(i).getDebit();
+                            debit = Statics.customerAccounts.get(customerId).cards[1].get(i).getDebit();
                             Statics.customerAccounts.get(customerId).cards[1].remove(i);
-                            Statics.customerAccounts.get(customerId).cards[1].add(new CreditCard(-debit+avaliableLimit));
+                            Statics.customerAccounts.get(customerId).cards[1].add(new CreditCard(-debit + avaliableLimit));
                             Statics.customerAccounts.get(customerId).cards[1].get(Statics.customerAccounts.get(customerId).cards[1].size() - 1).setAvailableLimit(avaliableLimit);
                             Statics.customerAccounts.get(customerId).cards[1].get(Statics.customerAccounts.get(customerId).cards[1].size() - 1).setDebit(debit);
                             System.out.println("Kredi kartınız başarıyla silinmiştir ve yerine yenisi oluşturulup kullanılabilir limitiniz ve kart borcunuz tanınmıştır...");
@@ -229,10 +227,8 @@ public class CustomerRepresentativeMenu extends MainMenu implements IMenu {
 
                 }
 
-            } else if (selection.equals("5")) {
-
             } else {
-
+                System.out.println("Hatalı giriş yaptınız lütfen tekrar deneyiniz...");
             }
         }
     }
