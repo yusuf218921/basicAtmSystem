@@ -40,6 +40,21 @@ public class CustomerAccount extends BaseAccount {
         return lastName;
     }
 
+    public long getTel() {
+        return tel;
+    }
+
+    public void setTel(long tel) {
+        this.tel = tel;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     @Override
     public void list() {

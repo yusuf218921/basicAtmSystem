@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Statics {
     static int registerId = 0;
     static int loginId;
+    static int cardId = 0;
     static boolean customerLogin = false;
     static boolean customerRepresentative = false;
     static ArrayList<CustomerAccount> customerAccounts = new ArrayList<>();

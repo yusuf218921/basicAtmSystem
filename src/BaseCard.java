@@ -4,6 +4,7 @@ public abstract class BaseCard {
     private final int cardCVV;
     private String IBAN;
     private int customerId = Statics.loginId;
+    private int cardId;
 
     public int getCustomerId() {
         return customerId;
@@ -22,6 +23,12 @@ public abstract class BaseCard {
         int day = (int) (Math.random() * (30 - 1)) + (1);
         int year = (int) (Math.random() * (2030 - 2027)) + (2027);
         cardExpiryDate += "" + day + "/" + month + "/" + year;
+        cardId=Statics.cardId;
+        Statics.cardId++;
+    }
+
+    public int getCardId() {
+        return cardId;
     }
 
     public String getCardNum() {

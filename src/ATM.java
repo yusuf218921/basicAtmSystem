@@ -1,6 +1,10 @@
 public class ATM {
+    Menu menu;
     public void run() {
-        Menu menu;
+        Statics.customerAccounts.add(new CustomerAccount(
+                "yusuf", "218921", 5387406279L,
+                "yusuf@gmail.com", "yusuf", "sönmez"));
+        Statics.transactions.add(new CardTransactions());
         while (true) {
             menu = new MainMenu();
             menu.menu();
@@ -9,8 +13,9 @@ public class ATM {
                 menu.menu();
                 Statics.customerLogin = false;
             } else if (Statics.customerRepresentative) {
-                System.out.println("sa");
-                break;
+                menu = new CustomerRepresentativeMenu();
+                menu.menu();
+                Statics.customerLogin = false;
             }
         }
     }

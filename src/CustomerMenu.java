@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CustomerMenu implements Menu {
+public class CustomerMenu extends MainMenu implements Menu {
     @Override
     public void menu() {
         while (true) {
@@ -35,9 +35,11 @@ public class CustomerMenu implements Menu {
                 System.out.println("0");
                 System.exit(0);
             } else if (selection.equals("1")) {
-                new CardMenu().menu();
+                menu = new CardMenu();
+                menu.menu();
             } else if (selection.equals("2")) {
-                new AccountMenu().menu();
+                menu = new AccountMenu();
+                menu.menu();
             } else if (selection.equals("3")) {
                 System.out.print("Yükleme yapılacak tutar : ");
                 int amount = InputControls.isItInt();
