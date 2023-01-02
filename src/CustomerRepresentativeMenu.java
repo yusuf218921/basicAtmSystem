@@ -43,12 +43,12 @@ public class CustomerRepresentativeMenu extends MainMenu implements Menu {
                             System.out.println("Lütfen telefon numaranızı doğru girdiğinizden emin olunuz...");
                         }
                     }
-                    boolean control=false;
+                    boolean control = false;
                     for (CustomerAccount account : Statics.customerAccounts) {
                         if (account.getTel() == tel && account.getEmail().equals(email)) {
                             System.out.println("\nKullanıcı adınız : " + account.getUserName());
                             InputThings.pressENTERToContunie();
-                            control=true;
+                            control = true;
                         }
                     }
                     if (control) {
@@ -97,14 +97,14 @@ public class CustomerRepresentativeMenu extends MainMenu implements Menu {
                     }
                     boolean control = false;
                     for (CustomerAccount account : Statics.customerAccounts) {
-                        if (account.getTel() == tel && account.getEmail().equals(email)&&account.getUserName().equals(userName)) {
+                        if (account.getTel() == tel && account.getEmail().equals(email) && account.getUserName().equals(userName)) {
                             String password;
                             System.out.print("\nYeni şifrenizi giriniz :  ");
                             password = scanner.next();
                             account.setPassword(password);
                             System.out.println("Şifreniz yenilendi...");
                             InputThings.pressENTERToContunie();
-                            control=true;
+                            control = true;
                         }
                     }
                     if (control) {
@@ -122,7 +122,7 @@ public class CustomerRepresentativeMenu extends MainMenu implements Menu {
                 ClearConsole.clrUp();
                 System.out.println("Öncelikle hesap bilgilerinizi giriniz...");
                 int customerId = -1;
-                boolean control=false;
+                boolean control = false;
                 while (true) {
                     String userName;
                     String password;
@@ -132,15 +132,15 @@ public class CustomerRepresentativeMenu extends MainMenu implements Menu {
                     password = scanner.next();
                     for (CustomerAccount account : Statics.customerAccounts) {
                         if (account.getUserName().equalsIgnoreCase(userName) && account.getPassword().equals(password)) {
-                            customerId=account.getId();
-                            control=true;
+                            customerId = account.getId();
+                            control = true;
                         }
                     }
                     if (control) {
                         break;
                     } else {
                         System.out.println("Hesap bilgilerinizi yanlış girdiniz...");
-                        if(!InputThings.yesOrNo()){
+                        if (!InputThings.yesOrNo()) {
                             break;
                         }
                     }
@@ -149,27 +149,85 @@ public class CustomerRepresentativeMenu extends MainMenu implements Menu {
                 while (control) {
                     String cardNum;
                     int balance;
-                    int avaliableLimit;
-                    int debit;
                     scanner.nextLine();
                     System.out.print("Kayıp Kartınızın Kart Numarasını Giriniz : ");
                     cardNum = scanner.nextLine();
-                    for (int i=0;i<Statics.customerAccounts.get(customerId).cards[0].size();i++) {
+                    for (int i = 0; i < Statics.customerAccounts.get(customerId).cards[0].size(); i++) {
                         if (Statics.customerAccounts.get(customerId).cards[0].get(i).getCardNum().equals(cardNum)) {
-                            balance=Statics.customerAccounts.get(customerId).cards[0].get(i).getBalance();
+                            balance = Statics.customerAccounts.get(customerId).cards[0].get(i).getBalance();
                             Statics.customerAccounts.get(customerId).cards[0].remove(i);
                             Statics.customerAccounts.get(customerId).cards[0].add(new DebitCard());
-                            Statics.customerAccounts.get(customerId).cards[0].get(Statics.customerAccounts.get(customerId).cards[0].size()-1).setBalance(balance);
-                            control=false;
+                            Statics.customerAccounts.get(customerId).cards[0].get(Statics.customerAccounts.get(customerId).cards[0].size() - 1).setBalance(balance);
+                            System.out.println("Banka kartınız başarıyla silindi ve yerine yeni bir kart oluşturup hesap bakiyeniz yeni karta aktarıldı...");
+                            InputThings.pressENTERToContunie();
+                            control = false;
                             break;
                         }
                     }
                     if (control) {
-                        System.out.println("Banka kartı bulunamadı...");
+                        System.out.println("Girmiş olduğunuz kart numarasıyla hesabınızdaki herhangi bir kart eşleşmemektedir...");
+                        if (!InputThings.yesOrNo()) {
+                            break;
+                        }
                     }
 
                 }
             } else if (selection.equals("4")) {
+                ClearConsole.clrUp();
+                System.out.println("Öncelikle hesap bilgilerinizi giriniz...");
+                int customerId = -1;
+                boolean control = false;
+                while (true) {
+                    String userName;
+                    String password;
+                    System.out.print("Kullanıcı adı : ");
+                    userName = scanner.next();
+                    System.out.print("Şifre : ");
+                    password = scanner.next();
+                    for (CustomerAccount account : Statics.customerAccounts) {
+                        if (account.getUserName().equalsIgnoreCase(userName) && account.getPassword().equals(password)) {
+                            customerId = account.getId();
+                            control = true;
+                        }
+                    }
+                    if (control) {
+                        break;
+                    } else {
+                        System.out.println("Hesap bilgilerinizi yanlış girdiniz...");
+                        if (!InputThings.yesOrNo()) {
+                            break;
+                        }
+                    }
+                }
+
+                while (control) {
+                    String cardNum;
+                    int avaliableLimit,debit;
+                    scanner.nextLine();
+                    System.out.print("Kayıp Kartınızın Kart Numarasını Giriniz : ");
+                    cardNum = scanner.nextLine();
+                    for (int i = 0; i < Statics.customerAccounts.get(customerId).cards[1].size(); i++) {
+                        if (Statics.customerAccounts.get(customerId).cards[1].get(i).getCardNum().equals(cardNum)) {
+                            avaliableLimit = Statics.customerAccounts.get(customerId).cards[1].get(i).getAvailableLimit();
+                            debit=Statics.customerAccounts.get(customerId).cards[1].get(i).getDebit();
+                            Statics.customerAccounts.get(customerId).cards[1].remove(i);
+                            Statics.customerAccounts.get(customerId).cards[1].add(new CreditCard(-debit+avaliableLimit));
+                            Statics.customerAccounts.get(customerId).cards[1].get(Statics.customerAccounts.get(customerId).cards[1].size() - 1).setAvailableLimit(avaliableLimit);
+                            Statics.customerAccounts.get(customerId).cards[1].get(Statics.customerAccounts.get(customerId).cards[1].size() - 1).setDebit(debit);
+                            System.out.println("Kredi kartınız başarıyla silinmiştir ve yerine yenisi oluşturulup kullanılabilir limitiniz ve kart borcunuz tanınmıştır...");
+                            InputThings.pressENTERToContunie();
+                            control = false;
+                            break;
+                        }
+                    }
+                    if (control) {
+                        System.out.println("Girmiş olduğunuz kart numarasıyla hesabınızdaki herhangi bir kart eşleşmemektedir...");
+                        if (!InputThings.yesOrNo()) {
+                            break;
+                        }
+                    }
+
+                }
 
             } else if (selection.equals("5")) {
 
