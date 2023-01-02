@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CustomerLogin implements Login {
+public class CustomerLogin implements ILogin {
     Scanner scanner = new Scanner(System.in);
 
     @Override

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CustomerMenu extends MainMenu implements Menu {
+public class CustomerMenu extends MainMenu implements IMenu {
     @Override
     public void menu() {
         while (true) {

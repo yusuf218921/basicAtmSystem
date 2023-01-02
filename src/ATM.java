@@ -1,5 +1,5 @@
 public class ATM {
-    Menu menu;
+    IMenu menu;
     public void run() {
         Statics.customerAccounts.add(new CustomerAccount(
                 "yusuf", "218921", 5387406279L,

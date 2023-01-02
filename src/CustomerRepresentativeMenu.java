@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CustomerRepresentativeMenu extends MainMenu implements Menu {
+public class CustomerRepresentativeMenu extends MainMenu implements IMenu {
     @Override
     public void menu() {
         Scanner scanner = new Scanner(System.in);
