@@ -11,7 +11,7 @@ public class MainMenu extends ATM implements IMenu {
             System.out.println("**************HerDerdeDeva ATM'sine hoş geldiniz**************\n\n");
             System.out.println("[1] Giriş Yap");
             System.out.println("[2] Kayıt Ol");
-            System.out.println("[3]Müşteri Temsilcisine Bağlan");
+            System.out.println("[3] Müşteri Temsilcisine Bağlan");
             System.out.println("[q] Çıkış Yap");
             System.out.println("\n\n");
             System.out.println("**************************************************************\n\n");
