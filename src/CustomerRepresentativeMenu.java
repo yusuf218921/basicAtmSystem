@@ -91,7 +91,7 @@ public class CustomerRepresentativeMenu extends MainMenu implements IMenu {
                         if (InputControls.isTelTrue(tel)) {
                             break;
                         } else {
-                            System.out.println("Lütfen telefon numaranızı doğru girdiğinizden emin olunuz...");
+                            System.out.println("Lütfen gerçek bir telefon numarası girdiğinizden ve araya boşluk bırakmadığınızdan emin olunuz...");
                         }
                     }
                     boolean control = false;
